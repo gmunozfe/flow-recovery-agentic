@@ -166,6 +166,7 @@ Expected logs after restart (there's no "[STEP 1 - RiskAgent] output=..."):
 * Tables:
 
   * `ProcessInstanceEntity`
+  * `TaskInfoEntity`
 
 ⚠️ Important:
 
