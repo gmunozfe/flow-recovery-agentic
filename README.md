@@ -48,7 +48,7 @@ Expected execution:
 
 ## 🔄 Sequence & Recovery Flow
 
-![Sequence & Recovery Flow](docs/images/recovery-flow-diagram.png)
+![Sequence & Recovery Flow](docs/images/recovery_flow_diagram.png)
 
 ---
 
