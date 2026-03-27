@@ -136,10 +136,9 @@ Restart the application:
 java -Dquarkus.profile=<profile> -jar target/quarkus-app/quarkus-run.jar
 ```
 
-Expected logs:
+Expected logs after restart (there's no "[STEP 1 - RiskAgent] output=..."):
 
 ```
-[STEP 1 - RiskAgent] output=...
 [STEP 2 - CrashOnce] recoveredInput=...
 [STEP 3 - FormatterAgent] recoveredInput=...
 [STEP 3 - FormatterAgent] output={..., status=COMPLETED}
