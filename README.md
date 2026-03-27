@@ -80,6 +80,7 @@ ollama pull llama3.2:3b
 
 ## ▶️ Run the application
 
+### Build
 Build depending on the persistence type:
 
 ```bash
@@ -88,21 +89,31 @@ mvn clean package -Predis -Dquarkus.profile=redis
 mvn clean package -Pjpa -Dquarkus.profile=jpa
 ```
 
+### Reset crash marker
+
+In case of previous executions, be sure there's no crash marker first time:
+
+```bash
+rm -f target/agentic-crash-once.marker
+```
+
+### Run
+
 Run with desired persistence backend:
 
-### Redis
+#### Redis
 
 ```bash
 java -Dquarkus.profile=redis -jar target/quarkus-app/quarkus-run.jar
 ```
 
-### PostgreSQL (JPA)
+#### PostgreSQL (JPA)
 
 ```bash
 java -Dquarkus.profile=jpa -jar target/quarkus-app/quarkus-run.jar
 ```
 
-### File (MVStore)
+#### File (MVStore)
 
 ```bash
 java -Dquarkus.profile=file -jar target/quarkus-app/quarkus-run.jar
